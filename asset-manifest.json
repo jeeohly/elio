@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/elio/static/css/main.75398ef7.css",
-    "main.js": "/elio/static/js/main.4ccdc6d9.js",
+    "main.css": "/elio/static/css/main.410f5c02.css",
+    "main.js": "/elio/static/js/main.147d1ce2.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
+    "static/media/tofu_1.png": "/elio/static/media/tofu_1.06479a8372390a5d1385.png",
+    "static/media/evil_lotso.png": "/elio/static/media/evil_lotso.6f620fe923f7d0240159.png",
+    "static/media/2023_Odaiba_Sanrio_Photobooth.gif": "/elio/static/media/2023_Odaiba_Sanrio_Photobooth.02d9091f7b785e6a0144.gif",
     "static/media/tofu_face.png": "/elio/static/media/tofu_face.f2f84990493325765cb3.png",
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
-    "main.75398ef7.css.map": "/elio/static/css/main.75398ef7.css.map",
-    "main.4ccdc6d9.js.map": "/elio/static/js/main.4ccdc6d9.js.map",
+    "main.410f5c02.css.map": "/elio/static/css/main.410f5c02.css.map",
+    "main.147d1ce2.js.map": "/elio/static/js/main.147d1ce2.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75398ef7.css",
-    "static/js/main.4ccdc6d9.js"
+    "static/css/main.410f5c02.css",
+    "static/js/main.147d1ce2.js"
   ]
 }
