@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/elio/static/css/main.968e2c69.css",
-    "main.js": "/elio/static/js/main.90330099.js",
+    "main.js": "/elio/static/js/main.b261d8e6.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
-    "static/media/tofu_face.png": "/elio/static/media/tofu_face.14e8efe6333a453115c4.png",
+    "static/media/tofu_face.png": "/elio/static/media/tofu_face.f2f84990493325765cb3.png",
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
     "main.968e2c69.css.map": "/elio/static/css/main.968e2c69.css.map",
-    "main.90330099.js.map": "/elio/static/js/main.90330099.js.map",
+    "main.b261d8e6.js.map": "/elio/static/js/main.b261d8e6.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.968e2c69.css",
-    "static/js/main.90330099.js"
+    "static/js/main.b261d8e6.js"
   ]
 }
