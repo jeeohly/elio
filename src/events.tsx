@@ -11,7 +11,7 @@ const elio_events: ElioEvent[] = [
     {
         id: 1, 
         title: "Gio asks out Elva",
-        date: "11 November 2022",
+        date: "6 November 2022",
         location: "Arlington, VA"
     }, 
     {

@@ -19,7 +19,21 @@
 }
 
 .App{
-  background-color: #87ceeb;
+  background: linear-gradient(45deg, #87ceeb, #f2e5b3);
+  background-size: 300% 300%; 
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%; 
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 
 .App-header {
@@ -50,7 +64,7 @@
   transform: translateX(-50%);
   font-family: "Cajoun";
   color: #145b78;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
