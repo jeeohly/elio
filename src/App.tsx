@@ -7,8 +7,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import captainIcon from './assets/captain_face.png'
-import tofuIcon from './assets/tofu_face.png'
+import captainIcon from './assets/captain_face.png';
+import tofuIcon from './assets/tofu_face.png';
 
 function get_days(): number{
   const oneDay: number = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
@@ -68,12 +68,13 @@ function App() {
           DAYS
         </h1>
         <div className="scroll-indicator" onClick={scrollToContent}>
-          TIMELINE
+          Timeline
         </div>
       </header>
-      <VerticalTimeline className='additional-content'>
+      <VerticalTimeline className='additional-content' layout='2-columns'>
         {elio_events.map((elio_event) => {
           let isTofu = elio_event.id >= 3;
+          let hasImg = elio_event.img !== 'none';
           return (
             <VerticalTimelineElement 
               key={elio_event.id} 
@@ -85,9 +86,9 @@ function App() {
                 {elio_event.title}
               </h3>
               <h5> 
-                {elio_event.location}
+                📍 {elio_event.location}
               </h5>
-
+              {hasImg ? <img src={elio_event.img} className="timeline-imgs"></img>: null}
             </VerticalTimelineElement>
           );
         })}
