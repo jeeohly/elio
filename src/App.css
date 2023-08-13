@@ -43,5 +43,14 @@
     transform: rotate(360deg);
   }
 }
+.scroll-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Cajoun";
+  color: #145b78;
+  font-size: 30px;
+}
 
 

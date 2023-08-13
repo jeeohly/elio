@@ -21,13 +21,13 @@ function get_days(): number{
 }
 
 const custom_style = {
-  color: '#145b78'
+  color: '#145b78',
 }
 
 const captain_style = {
   background: '#fdea7b',
   backgroundImage: `url(${captainIcon})`,
-  backgroundSize: 'cover' 
+  backgroundSize: 'cover',
 }
 
 const tofu_style = {
@@ -50,17 +50,28 @@ function DisplayDays({ n }: NumberProps) {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
+const scrollToContent = () => {
+  const additionalContent = document.querySelector('.additional-content');
+  if (additionalContent) {
+    additionalContent.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1 className="elio-days">
-        ELIO
-        <DisplayDays n={get_days()} />
-        DAYS
-      </h1>
+        <h1 className="elio-days">
+          ELIO
+          <DisplayDays n={get_days()} />
+          DAYS
+        </h1>
+        <div className="scroll-indicator" onClick={scrollToContent}>
+          TIMELINE
+        </div>
       </header>
-      <VerticalTimeline>
+      <VerticalTimeline className='additional-content'>
         {elio_events.map((elio_event) => {
           let isTofu = elio_event.id >= 3;
           return (
