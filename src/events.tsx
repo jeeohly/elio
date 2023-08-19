@@ -2,7 +2,7 @@ import React from 'react';
 import evilLotso from './assets/evil_lotso.png';
 import sanrioGIF from './assets/2023_Odaiba_Sanrio_Photobooth.gif';
 import tofu1 from './assets/tofu_1.png'
-import gingerbread from './assets/christmas_2022_gingerbread_house.png'
+import terraria1 from './assets/08-18-23_terraria.png';
 
 interface ElioEvent {
     id: number; 
@@ -22,7 +22,7 @@ const elio_events: ElioEvent[] = [
     }, 
     {
         id: 2, 
-        title: "Elva moves",
+        title: "Elva moves 😢",
         date: "April 2023", 
         location: "VA to NY",
         img: 'none'
@@ -48,6 +48,13 @@ const elio_events: ElioEvent[] = [
         location: "DC",
         img: evilLotso
     },
+    {
+        id: 6, 
+        title: "Defeated Eye Monster",
+        date: "18 August 2023",
+        location: "Terraria",
+        img: terraria1,
+    }
 ];
 
 export default elio_events
