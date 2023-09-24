@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elio/static/css/main.410f5c02.css",
-    "main.js": "/elio/static/js/main.df451711.js",
+    "main.js": "/elio/static/js/main.a5cd48da.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
     "static/media/tofu_1.png": "/elio/static/media/tofu_1.06479a8372390a5d1385.png",
     "static/media/evil_lotso.png": "/elio/static/media/evil_lotso.6f620fe923f7d0240159.png",
@@ -11,11 +11,11 @@
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
     "main.410f5c02.css.map": "/elio/static/css/main.410f5c02.css.map",
-    "main.df451711.js.map": "/elio/static/js/main.df451711.js.map",
+    "main.a5cd48da.js.map": "/elio/static/js/main.a5cd48da.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.410f5c02.css",
-    "static/js/main.df451711.js"
+    "static/js/main.a5cd48da.js"
   ]
 }
