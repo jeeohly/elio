@@ -11,13 +11,11 @@ import captainIcon from './assets/captain_face.png';
 import tofuIcon from './assets/tofu_face.png';
 
 function get_days(): number{
-  const oneDay: number = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-  const firstDay: Date = new Date(2022, 11, 6);
-  const today: Date = new Date();
-  const easternTimeZoneOffset: number = today.getTimezoneOffset() / 60 + 5;
-  const eastern_timezone_today: Date = new Date(today.getTime() + easternTimeZoneOffset * 60 * 60 * 1000);
-  const days: number = Math.round(Math.abs(( eastern_timezone_today.getTime() - firstDay.getTime()) / oneDay));
-  return days;
+  const targetDate = new Date('2022-11-06');
+  const currentDate = new Date();
+  const timeDifference = currentDate.getTime() - targetDate.getTime();
+  const daysDifference = timeDifference / (1000 * 3600 * 24); // Convert milliseconds to days
+  return Math.floor(daysDifference);
 }
 
 const custom_style = {

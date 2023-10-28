@@ -3,6 +3,7 @@ import evilLotso from './assets/evil_lotso.png';
 import sanrioGIF from './assets/2023_Odaiba_Sanrio_Photobooth.gif';
 import tofu1 from './assets/tofu_1.png'
 import terraria1 from './assets/08-18-23_terraria.png';
+import pumpkins from './assets/pumpkins_2023.png';
 
 interface ElioEvent {
     id: number; 
@@ -54,6 +55,13 @@ const elio_events: ElioEvent[] = [
         date: "18 August 2023",
         location: "Terraria",
         img: terraria1,
+    },
+    {
+        id: 7, 
+        title: "Cox farms pumpkins (-.-)",
+        date: "14 October 2023",
+        location: "west virginia", 
+        img: pumpkins,
     }
 ];
 
