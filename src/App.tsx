@@ -56,10 +56,16 @@ function scrollToContent(class_name: string) {
 }
 
 const CaptainGameComponent: React.FC = () => {
+  const divStyles = {
+    margin: '5px',
+  };
+  const captionStyles: React.CSSProperties = { 
+    textAlign: 'center',
+  }
   return (
-    <div>
+    <div style={divStyles}>
+      <p style={captionStyles}>WASD/arrow_keys to move player, press R to restart</p>
       <iframe
-        style={{ margin: '10px' }}
         className="captain-content"
         scrolling="no"
         src="https://jeeohly.github.io/captain/gh_pages/test_game"
