@@ -48,11 +48,26 @@ function DisplayDays({ n }: NumberProps) {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
-const scrollToContent = () => {
-  const additionalContent = document.querySelector('.additional-content');
-  if (additionalContent) {
-    additionalContent.scrollIntoView({ behavior: 'smooth' });
+function scrollToContent(class_name: string) {
+  const contentSection = document.querySelector(class_name);
+  if (contentSection) {
+    contentSection.scrollIntoView({ behavior: 'smooth' });
   }
+}
+
+const CaptainGameComponent: React.FC = () => {
+  return (
+    <div>
+      <iframe
+        style={{ margin: '10px' }}
+        className="captain-content"
+        scrolling="no"
+        src="https://jeeohly.github.io/captain/gh_pages/test_game"
+        width="640"
+        height="480"
+      ></iframe>
+    </div>
+  );
 };
 
 
@@ -65,11 +80,16 @@ function App() {
           <DisplayDays n={get_days()} />
           DAYS
         </h1>
-        <div className="scroll-indicator" onClick={scrollToContent}>
-          Timeline
+        <div className="scroll-indicator">
+          <div onClick={() => scrollToContent('.timeline-content')}>
+            Timeline
+          </div>
+          <div onClick={() => scrollToContent('.captain-content')}>
+            Captain
+          </div>
         </div>
       </header>
-      <VerticalTimeline className='additional-content' layout='2-columns'>
+      <VerticalTimeline className='timeline-content' layout='2-columns'>
         {elio_events.map((elio_event) => {
           let isTofu = elio_event.id >= 3;
           let hasImg = elio_event.img !== 'none';
@@ -91,6 +111,7 @@ function App() {
           );
         })}
       </VerticalTimeline>
+      <CaptainGameComponent></CaptainGameComponent> 
     </div>
   );
 }
