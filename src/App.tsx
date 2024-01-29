@@ -64,7 +64,7 @@ const CaptainGameComponent: React.FC = () => {
   }
   return (
     <div style={divStyles}>
-      <p style={captionStyles}>WASD/arrow_keys to move player, press R to restart</p>
+      <p style={captionStyles}>WASD/arrow_keys to move player, press SPACE to start</p>
       <iframe
         className="captain-content"
         scrolling="no"
