@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/elio/static/css/main.410f5c02.css",
-    "main.js": "/elio/static/js/main.244f2159.js",
+    "main.css": "/elio/static/css/main.483aed31.css",
+    "main.js": "/elio/static/js/main.ae3610f2.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
     "static/media/pumpkins_2023.png": "/elio/static/media/pumpkins_2023.ed07486aa00f6c544e44.png",
     "static/media/tofu_1.png": "/elio/static/media/tofu_1.06479a8372390a5d1385.png",
     "static/media/evil_lotso.png": "/elio/static/media/evil_lotso.6f620fe923f7d0240159.png",
     "static/media/pumpkins_2024.png": "/elio/static/media/pumpkins_2024.12c920f416ab5f3886ab.png",
+    "static/media/01.gif": "/elio/static/media/01.2962a28d55f876da23a8.gif",
+    "static/media/03.gif": "/elio/static/media/03.eb603149180e59d5a484.gif",
+    "static/media/04.gif": "/elio/static/media/04.ac016f2e3ddd6c68d81c.gif",
     "static/media/08-18-23_terraria.png": "/elio/static/media/08-18-23_terraria.3508dbfc37429077f0af.png",
     "static/media/2023_Odaiba_Sanrio_Photobooth.gif": "/elio/static/media/2023_Odaiba_Sanrio_Photobooth.02d9091f7b785e6a0144.gif",
     "static/media/griffith.jpg": "/elio/static/media/griffith.a3c1c8a884b4a9259944.jpg",
     "static/media/balthazar.jpg": "/elio/static/media/balthazar.734fd6f0ec38d83d2cc8.jpg",
     "static/media/tofu_fireplace.jpg": "/elio/static/media/tofu_fireplace.bc8a650925eeab93782f.jpg",
+    "static/media/02.gif": "/elio/static/media/02.87be7c897941e0b8cfea.gif",
     "static/media/2year.jpg": "/elio/static/media/2year.f3bb5eecb074f3a99ed7.jpg",
     "static/media/olga.jpg": "/elio/static/media/olga.5b27d6d3ead3df27eeac.jpg",
+    "static/media/luffy_tofu.gif": "/elio/static/media/luffy_tofu.e9186c4291c8dca5ea71.gif",
+    "static/media/captain.gif": "/elio/static/media/captain.e6975ba589dcd48256c3.gif",
     "static/media/tofu_face.png": "/elio/static/media/tofu_face.f2f84990493325765cb3.png",
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
-    "main.410f5c02.css.map": "/elio/static/css/main.410f5c02.css.map",
-    "main.244f2159.js.map": "/elio/static/js/main.244f2159.js.map",
+    "main.483aed31.css.map": "/elio/static/css/main.483aed31.css.map",
+    "main.ae3610f2.js.map": "/elio/static/js/main.ae3610f2.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.410f5c02.css",
-    "static/js/main.244f2159.js"
+    "static/css/main.483aed31.css",
+    "static/js/main.ae3610f2.js"
   ]
 }
