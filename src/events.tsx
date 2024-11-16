@@ -4,6 +4,12 @@ import sanrioGIF from './assets/2023_Odaiba_Sanrio_Photobooth.gif';
 import tofu1 from './assets/tofu_1.png'
 import terraria1 from './assets/08-18-23_terraria.png';
 import pumpkins from './assets/pumpkins_2023.png';
+import tofuCabin from './assets/tofu_fireplace.jpg';
+import balthazar from './assets/balthazar.jpg';
+import griffith from './assets/griffith.jpg';
+import olga from './assets/olga.jpg';
+import pumpkins2 from './assets/pumpkins_2024.png';
+import year2 from './assets/2year.jpg';
 
 interface ElioEvent {
     id: number; 
@@ -62,7 +68,49 @@ const elio_events: ElioEvent[] = [
         date: "14 October 2023",
         location: "west virginia", 
         img: pumpkins,
-    }
+    },
+    {
+      id: 8, 
+      title: "Cabin Trip",
+      date: "17 December 2024",
+      location: "somewhere in NY",
+      img: tofuCabin,
+    },
+    {
+      id: 9, 
+      title: "Snow storm and Balthazar",
+      date: "13 February 2024",
+      location: "soho",
+      img: balthazar,
+    },
+    {
+      id: 10, 
+      title: "LA offroad descent",
+      date: "25 MY 2024",
+      location: "LA peak",
+      img: griffith,
+    },
+    {
+      id: 11, 
+      title: "Olga Wedding",
+      date: "30 MY 2024",
+      location: "Somewhere in NJ",
+      img: olga,
+    },
+    {
+      id: 12, 
+      title: "Cox farms pumpkins (-.-) 2",
+      date: "05 October 2024",
+      location: "west virginia", 
+      img: pumpkins2,
+    },
+    {
+      id: 13, 
+      title: "2 years but little early",
+      date: "29 October 2024",
+      location: "chelsea", 
+      img: year2,
+    },
 ];
 
 export default elio_events
