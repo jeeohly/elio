@@ -16,6 +16,7 @@
 .elio-days {
   font-family: "Cajoun";
   color: #145b78;
+  z-index: 11;
 }
 
 .App{
@@ -43,6 +44,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  z-index: 10;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle black shadow */
 }
 
 .App-link {
@@ -65,10 +69,10 @@
   font-family: "Cajoun";
   color: #145b78;
   font-size: 25px;
+  z-index: 11;
 }
 
 .timeline-imgs {
   width: 80%;
 }
-
 

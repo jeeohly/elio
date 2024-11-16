@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { useSpring, animated } from "react-spring";
 import elio_events from "./events";
@@ -9,6 +9,13 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import captainIcon from './assets/captain_face.png';
 import tofuIcon from './assets/tofu_face.png';
+import luffyTofu from './assets/pixel/luffy_tofu.gif'
+import toastCap from './assets/pixel/captain.gif'
+import gif1 from './assets/01.gif';
+import gif2 from './assets/02.gif';
+import gif3 from './assets/03.gif';
+import gif4 from './assets/04.gif';
+
 
 function get_days(): number{
   const targetDate = new Date('2022-11-06');
@@ -78,6 +85,10 @@ const CaptainGameComponent: React.FC = () => {
 
 
 function App() {
+  useEffect(() => {
+    addRandomImages();
+    addGifs();
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -121,6 +132,58 @@ function App() {
     </div>
   );
 }
+
+
+// Utility function to get a random integer between min and max (inclusive)
+const getRandomInt = (min: number, max: number, excludeMin: number, excludeMax: number): number => {
+  let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+  while (randomNum >= excludeMin && randomNum <= excludeMax) {
+    randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  return randomNum;
+};
+
+// Function to add random images to the container
+const addRandomImages = (): void => {
+  const container = document.querySelector('.App-header') as HTMLElement;
+  const numberOfImages = 5; // Number of images to add
+
+  for (let i = 0; i < numberOfImages; i++) {
+    const img = document.createElement('img');
+    if (i % 2 == 0){
+      img.src = luffyTofu; // Use the imported image
+    }else{
+      img.src = toastCap;
+    }
+    img.alt = "";
+    img.className = 'spam-image';
+    img.style.top = `${getRandomInt(0, 90, 40, 60)}%`;
+    img.style.left = `${getRandomInt(0, 90, 40, 60)}%`;
+    img.style.position = 'absolute';
+    img.style.width = '100px'; // Adjust size as needed
+    img.style.height = '100px'; // Adjust size as needed
+    container.appendChild(img);
+  }
+};
+
+// Function to add GIFs to the container
+const addGifs = (): void => {
+  const container = document.querySelector('.App-header') as HTMLElement;
+  const gifs = [gif1, gif2, gif3, gif4];
+  
+  gifs.forEach((gifSrc, index) => {
+    const gif = document.createElement('img');
+    gif.src = gifSrc; // Use the imported GIF
+    gif.alt = ""; // Add an empty alt attribute for decorative images
+    gif.className = 'spam-image';
+    gif.style.top = `${getRandomInt(0, 90, 40, 60)}%`;
+    gif.style.left = `${getRandomInt(0, 90, 40, 60)}%`;
+    gif.style.width = '200px'; // Set max width
+    gif.style.height = 'auto'; // Maintain aspect ratio
+    gif.style.position = 'absolute';
+    container.appendChild(gif);
+  });
+};
 
 export default App;
 

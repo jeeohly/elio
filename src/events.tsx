@@ -86,14 +86,14 @@ const elio_events: ElioEvent[] = [
     {
       id: 10, 
       title: "LA offroad descent",
-      date: "25 MY 2024",
+      date: "25 May 2024",
       location: "LA peak",
       img: griffith,
     },
     {
       id: 11, 
       title: "Olga Wedding",
-      date: "30 MY 2024",
+      date: "30 May 2024",
       location: "Somewhere in NJ",
       img: olga,
     },
