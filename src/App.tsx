@@ -134,55 +134,54 @@ function App() {
 }
 
 
-// Utility function to get a random integer between min and max (inclusive)
-const getRandomInt = (min: number, max: number, excludeMin: number, excludeMax: number): number => {
-  let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-  while (randomNum >= excludeMin && randomNum <= excludeMax) {
-    randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  return randomNum;
+const getRandomInt = (min: number, max: number): number => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-// Function to add random images to the container
-const addRandomImages = (): void => {
-  const container = document.querySelector('.App-header') as HTMLElement;
-  const numberOfImages = 5; // Number of images to add
-
-  for (let i = 0; i < numberOfImages; i++) {
-    const img = document.createElement('img');
-    if (i % 2 == 0){
-      img.src = luffyTofu; // Use the imported image
-    }else{
-      img.src = toastCap;
-    }
-    img.alt = "";
-    img.className = 'spam-image';
-    img.style.top = `${getRandomInt(0, 90, 40, 60)}%`;
-    img.style.left = `${getRandomInt(0, 90, 40, 60)}%`;
-    img.style.position = 'absolute';
-    img.style.width = '100px'; // Adjust size as needed
-    img.style.height = '100px'; // Adjust size as needed
-    container.appendChild(img);
-  }
-};
-
-// Function to add GIFs to the container
 const addGifs = (): void => {
   const container = document.querySelector('.App-header') as HTMLElement;
   const gifs = [gif1, gif2, gif3, gif4];
-  
+  const positionRanges = [
+    { topMin: 0, topMax: 20, leftMin: 0, leftMax: 20 },
+    { topMin: 20, topMax: 40, leftMin: 20, leftMax: 40 },
+    { topMin: 40, topMax: 60, leftMin: 40, leftMax: 60 },
+    { topMin: 60, topMax: 80, leftMin: 60, leftMax: 80 },
+  ];
   gifs.forEach((gifSrc, index) => {
     const gif = document.createElement('img');
     gif.src = gifSrc; // Use the imported GIF
     gif.alt = ""; // Add an empty alt attribute for decorative images
     gif.className = 'spam-image';
-    gif.style.top = `${getRandomInt(0, 90, 40, 60)}%`;
-    gif.style.left = `${getRandomInt(0, 90, 40, 60)}%`;
+    const range = positionRanges[index % positionRanges.length];
+    gif.style.top = `${getRandomInt(range.topMin, range.topMax)}%`;
+    gif.style.left = `${getRandomInt(range.leftMin, range.leftMax)}%`;
     gif.style.width = '200px'; // Set max width
     gif.style.height = 'auto'; // Maintain aspect ratio
     gif.style.position = 'absolute';
     container.appendChild(gif);
   });
+};
+
+const addRandomImages = (): void => {
+  const container = document.querySelector('.App-header') as HTMLElement;
+  const numberOfImages = 10;
+
+  for (let i = 0; i < numberOfImages; i++) {
+    const img = document.createElement('img');
+    if (i % 2 == 0){
+      img.src = luffyTofu;
+    }else{
+      img.src = toastCap;
+    }
+    img.alt = "";
+    img.className = 'spam-image';
+    img.style.top = `${getRandomInt(0, 90)}%`;
+    img.style.left = `${getRandomInt(0, 90)}%`;
+    img.style.position = 'absolute';
+    img.style.width = '100px';
+    img.style.height = '100px';
+    container.appendChild(img);
+  }
 };
 
 export default App;
