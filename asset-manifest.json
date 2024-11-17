@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elio/static/css/main.483aed31.css",
-    "main.js": "/elio/static/js/main.ae3610f2.js",
+    "main.js": "/elio/static/js/main.363a879f.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
     "static/media/pumpkins_2023.png": "/elio/static/media/pumpkins_2023.ed07486aa00f6c544e44.png",
     "static/media/tofu_1.png": "/elio/static/media/tofu_1.06479a8372390a5d1385.png",
@@ -24,11 +24,11 @@
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
     "main.483aed31.css.map": "/elio/static/css/main.483aed31.css.map",
-    "main.ae3610f2.js.map": "/elio/static/js/main.ae3610f2.js.map",
+    "main.363a879f.js.map": "/elio/static/js/main.363a879f.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.483aed31.css",
-    "static/js/main.ae3610f2.js"
+    "static/js/main.363a879f.js"
   ]
 }
