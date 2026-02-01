@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elio/static/css/main.483aed31.css",
-    "main.js": "/elio/static/js/main.c4436517.js",
+    "main.js": "/elio/static/js/main.375cf222.js",
     "static/js/787.da855311.chunk.js": "/elio/static/js/787.da855311.chunk.js",
     "static/media/pumpkins_2023.png": "/elio/static/media/pumpkins_2023.ed07486aa00f6c544e44.png",
     "static/media/tofu_1.png": "/elio/static/media/tofu_1.06479a8372390a5d1385.png",
@@ -11,6 +11,7 @@
     "static/media/01.gif": "/elio/static/media/01.2962a28d55f876da23a8.gif",
     "static/media/03.gif": "/elio/static/media/03.eb603149180e59d5a484.gif",
     "static/media/04.gif": "/elio/static/media/04.ac016f2e3ddd6c68d81c.gif",
+    "static/media/budakan25.jpg": "/elio/static/media/budakan25.105fa1df1eaa7e078e84.jpg",
     "static/media/08-18-23_terraria.png": "/elio/static/media/08-18-23_terraria.3508dbfc37429077f0af.png",
     "static/media/chriswedding.jpg": "/elio/static/media/chriswedding.9c76f98fa3821126fe1e.jpg",
     "static/media/busan25-2.jpg": "/elio/static/media/busan25-2.2c16eedac140efb92d7b.jpg",
@@ -25,17 +26,18 @@
     "static/media/randoitalian25.jpg": "/elio/static/media/randoitalian25.d7ac147493a5d05c12b2.jpg",
     "static/media/busan25.jpg": "/elio/static/media/busan25.0dbcac3f5da59ffac93a.jpg",
     "static/media/olga.jpg": "/elio/static/media/olga.5b27d6d3ead3df27eeac.jpg",
+    "static/media/pumpkins_2025.jpg": "/elio/static/media/pumpkins_2025.54ff890ccd014b48b80b.jpg",
     "static/media/luffy_tofu.gif": "/elio/static/media/luffy_tofu.e9186c4291c8dca5ea71.gif",
     "static/media/captain.gif": "/elio/static/media/captain.e6975ba589dcd48256c3.gif",
     "static/media/tofu_face.png": "/elio/static/media/tofu_face.f2f84990493325765cb3.png",
     "static/media/captain_face.png": "/elio/static/media/captain_face.ebfb9a5db614691b04c1.png",
     "index.html": "/elio/index.html",
     "main.483aed31.css.map": "/elio/static/css/main.483aed31.css.map",
-    "main.c4436517.js.map": "/elio/static/js/main.c4436517.js.map",
+    "main.375cf222.js.map": "/elio/static/js/main.375cf222.js.map",
     "787.da855311.chunk.js.map": "/elio/static/js/787.da855311.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.483aed31.css",
-    "static/js/main.c4436517.js"
+    "static/js/main.375cf222.js"
   ]
 }
