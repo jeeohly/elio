@@ -108,8 +108,7 @@ function App() {
       </header>
       <VerticalTimeline className='timeline-content' layout='2-columns'>
         {elio_events.map((elio_event) => {
-          let isTofu = elio_event.id >= 3;
-          let hasImg = elio_event.img !== 'none';
+          let isTofu = Math.random() < 0.5;
           return (
             <VerticalTimelineElement 
               key={elio_event.id} 
@@ -120,10 +119,18 @@ function App() {
               <h3 className="vertical-timeline-element-title">
                 {elio_event.title}
               </h3>
-              <h5> 
+
+              <h5>
                 📍 {elio_event.location}
               </h5>
-              {hasImg ? <img src={elio_event.img} className="timeline-imgs"></img>: null}
+
+              {elio_event.img !== "none" && (
+                Array.isArray(elio_event.img)
+                  ? elio_event.img.map((src, i) => (
+                      <img key={i} src={src} className="timeline-imgs" />
+                    ))
+                  : <img src={elio_event.img} className="timeline-imgs" />
+              )}
             </VerticalTimelineElement>
           );
         })}
